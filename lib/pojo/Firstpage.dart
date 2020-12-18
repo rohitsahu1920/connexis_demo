@@ -1,4 +1,4 @@
-class first_page {
+class Firstpage {
   int page;
   int perPage;
   int total;
@@ -6,7 +6,7 @@ class first_page {
   List<Data> data;
   Support support;
 
-  first_page(
+  Firstpage(
       {this.page,
         this.perPage,
         this.total,
@@ -14,7 +14,7 @@ class first_page {
         this.data,
         this.support});
 
-  first_page.fromJson(Map<String, dynamic> json) {
+  Firstpage.fromJson(Map<String, dynamic> json) {
     page = json['page'];
     perPage = json['per_page'];
     total = json['total'];

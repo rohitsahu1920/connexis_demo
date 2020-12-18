@@ -8,7 +8,7 @@ class Request {
 
   Request(this._url, this._body);
 
-  Future<Response> get() async{
+  Future<Response> getone() async{
     Dio dio = Dio(
       BaseOptions(
         baseUrl: urlBase,
@@ -21,6 +21,7 @@ class Request {
     Response responce = await dio.get(
       urlBase + _url,
     );
+    //print(responce);
     return responce;
   }
 }
