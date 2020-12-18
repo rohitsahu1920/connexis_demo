@@ -6,6 +6,8 @@ import 'package:connexis_demo/util/common.dart';
 import 'package:flutter/material.dart';
 import 'package:toast/toast.dart';
 
+import 'my_drawer.dart';
+
 class first extends StatefulWidget {
   @override
   _firstState createState() => _firstState();
@@ -60,6 +62,7 @@ class _firstState extends State<first> {
           ),
         ],
       ),
+      drawer: SafeArea(child: MyDrawer()),
       body: Column(
         children: [
           Container(
